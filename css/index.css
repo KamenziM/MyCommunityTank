@@ -1,0 +1,72 @@
+h2 {display: none;}
+section {text-align: center;}
+p {text-align: center;}
+
+
+
+.page-layout {display: flex;
+align-items: flex-start;
+gap: 20px
+}
+
+aside {
+	background: #BEEBE9;
+	font-size: 120%;
+	width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+aside a {
+	
+	display: block;
+	padding: 10px 0;
+    border-radius: 4px;
+	text-decoration: none;
+    text-align:center;
+    color: #030303;
+	width: 100%;
+
+}
+
+
+aside a:hover {
+	background-color: #FFB5A7;
+	color: #030303;
+}
+
+
+
+aside a:focus {
+  background-color: #BEEBE9;
+  color: #030303;
+  outline: none;
+}
+
+.Hero{flex:1;}     
+
+
+    @media only screen and (min-width: 768px) {
+
+	main {
+		display: flex;
+	}
+
+	aside {
+		align-items: center;
+		display:flex;
+		flex-direction:column;
+		float: left;
+		justify-content: center;
+		width: 15%;
+	}
+
+	section {
+		display: inline;
+		float:left;
+		width: 70%;
+	}
+
+}

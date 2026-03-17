@@ -1,0 +1,155 @@
+#hamburger_checkbox {display: none;}
+
+#hamburger_menu {cursor: pointer;display: block;}
+
+#hamburger_icon {width: 32px; height: auto;}
+
+nav { display: none;flex-direction: column;background: #ffffff; width: 100%;text-align: center;}
+
+nav a { padding: 1rem; border-bottom: 1px solid #e0e0e0;text-decoration: none;color: #333;}
+
+#hamburger_checkbox:checked + #hamburger_menu + nav {display: flex;}
+
+
+@media (min-width: 768px) {#hamburger_menu { display: none;}
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        gap: 2rem;
+        background: none;
+        width: auto;
+    }
+    nav a {
+        border: none;
+        padding: 0.5rem 0;
+    }
+}
+
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #FFF7F0;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+
+header {
+    background-color: #C7B8EA;
+    overflow: hidden;
+     position: sticky;
+    top: 0;
+    z-index: 1000; 
+  }
+  
+
+
+  #hamburger_checkbox {
+    display: none;
+  }
+  
+
+  #hamburger_image {
+    background-color: #C7B8EA;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 10%;
+  }
+  
+  
+
+  input[id="hamburger_checkbox"]:not(:checked) + nav {
+    display: none;
+  }
+  
+ 
+  h1 {
+    color: #030303;
+    float: left;
+    text-align: left;
+    padding: 0 20px;
+    width: 100%;
+  }
+  
+  
+
+  nav a {
+    color: #030303;
+    float: right;
+    font-size: 17px;
+    padding: 30px 20px;
+    text-align:right;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  
+
+  nav a:hover {
+    background-color: #FFB5A7;
+    color: #030303;
+  }
+  
+
+  nav a:focus {
+     background-color: #BEEBE9;
+    color: #030303;
+    outline: none;
+  }
+  
+
+ .active_nav{ 
+    background-color: #BEEBE9;
+    color: #030303;
+  }
+
+  
+footer {
+	background: #C7B8EA;
+  color: #030303;
+	padding: 32px;
+	text-align: center;
+	width: 100%;
+}
+  
+
+  @media only screen and (min-width: 768px) {
+  
+   
+        #hamburger_image {
+          display: none;
+        }
+  
+    
+        input[id="hamburger_checkbox"]:not(:checked) + nav {
+          display:block
+        }
+  
+  
+        h1 {
+            float: left;
+          text-align:left;
+          width: 390px;
+        }
+  
+  
+        nav {
+          float: right;
+        }
+  
+
+        nav a {
+          width: auto;
+        }
+  }
+  
+  
